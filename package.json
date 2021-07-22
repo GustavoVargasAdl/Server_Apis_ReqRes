@@ -1,0 +1,23 @@
+{
+  "name": "reqres",
+  "version": "0.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ben Howdle <hello@benhowdle.im> (http://benhowdle.im/)",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.9.0",
+    "cors": "^2.4.2",
+    "express": "^4.9.7",
+    "hbs": "^4.0.1"
+  },
+  "devDependencies": {
+    "gulp": "^3.8.8",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-livereload": "^3.8.1",
+    "gulp-ruby-sass": "^2.1.1"
+  }
+}
