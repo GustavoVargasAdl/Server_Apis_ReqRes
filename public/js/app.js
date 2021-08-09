@@ -101,7 +101,11 @@ window.addEventListener("load", function() {
 				"email": "tobias.funke@reqres.in",
 				"password": "cityslick8",
 				"email": "byron.fields@reqres.in",
-				"password": "cityslick9"
+				"password": "cityslick9",
+				"email": "george.edwards@reqres.in",
+				"password": "cityslick10",
+				"email": "rachel.howell@reqres.in",
+				"password": "cityslick11"
 			}
 		},
 		"login-unsuccessful": {

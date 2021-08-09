@@ -46,11 +46,13 @@ module.exports = {
 		return res.status(204).send({});
 	},
 
-	login: function(req, res, next) {
+    login: function(req, res, next) {
 		if (req.body.username || req.body.email) {
 			if (req.body.password) {
 				const user = data.users.find( usersearch => usersearch.email === req.body.email );
-				if (user) {
+				const password = data.users.find(usersearch => usersearch.password === req.body.password)
+
+				if (user && password) {
 					const token = data.tokens.find( token => token.id === user.id );
 					if (token) {
 						return res.status(200).send({
@@ -59,12 +61,12 @@ module.exports = {
 					}
 				} else {
 					return res.status(400).send({
-						error: "user not found"
+						error: "invalid username or password"
 					});
 				}
 			} else {
 				return res.status(400).send({
-					error: "Missing password"
+					error: "Missing password---"
 				});
 			}
 		} else {
