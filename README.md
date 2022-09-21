@@ -2,8 +2,19 @@ ReqRes
 ======
 
 ReqRes is a bare-bones ExpressJS application.
-
+* Agradecimientos a sus creadores.
+* Este proyecto fue descargado de  http://reqres.in
 [Docs & Demos ⇒](http://reqres.in)
+
+* En esta versión se implementan un total de 12 usurios que al momento de hacer login devolveran un token diferente cada uno
+- El Servidor: provee las API's para las pruebas K6
+Clonar:
+`git@github.com:GustavoVargasAdl/Server_Apis_ReqRes.git`  
+  Dentro de la carpteta del proyecto:
+  - npm install
+  Run:
+    node app.js
+    Base Url = `http://localhost:5000/`
 
 ## Installation
 
